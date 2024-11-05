@@ -1,0 +1,11 @@
+.input-base{
+    @apply flex-shrink-0 border-2 rounded w-[288px] h-[52px] m-3 p-2
+}
+
+.input-primary{
+    @apply border-primary-950 focus:ring-primary-400 focus:border-primary-400 focus:ring-1 focus:outline-none focus:shadow
+
+}
+.input-secondary{
+    @apply border-primary-400 focus:ring-primary-950 focus:border-primary-950 focus:ring-1 focus:outline-none focus:shadow
+}

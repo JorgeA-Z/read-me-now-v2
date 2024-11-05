@@ -1,0 +1,23 @@
+.button-base{
+    @apply flex-shrink-0 border-2 rounded-md font-comfortaa
+}
+
+.button-sm{
+    @apply w-[143px] h-[52px]
+}
+
+.button-md{
+    @apply w-[243px] h-[52px] 
+}
+
+.button-lg{
+    @apply w-[343px] h-[52px]
+}
+
+.button-primary{
+    @apply border-primary-950  bg-primary-400 text-primary-950  hover:bg-primary-950 hover:text-primary-400 dark:border-primary-950
+
+}
+.button-secondary{
+    @apply border-primary-400  bg-primary-950 text-primary-400  hover:bg-primary-400 hover:text-primary-950 dark:border-primary-950
+}

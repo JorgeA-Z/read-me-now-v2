@@ -1,0 +1,57 @@
+server:
+  port: 8083
+spring:
+  output:
+    ansi:
+      enabled: always
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        jdbc:
+          batch_size: 10
+        order_inserts: true
+        format_sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/readmenow?serverTimezone=America/Mexico_City
+    hikari:
+      idle-timeout: 100
+      maximum-pool-size: 10
+      max-lifetime: 120000
+      connection-timeout: 10000
+      minimum-idle: 3
+      data-source-properties:
+        rewriteBatchedStatements: true
+        prepStmtCacheSqlLimit: 2048
+        elideSetAutoCommits: true
+        useLocalSessionState: true
+        maintainTimeStats: false
+        useServerPrepStmts: true
+        prepStmtCacheSize: 250
+        cacheResultSetMetadata: true
+        cacheServerConfiguration: true
+        cachePrepStmts: true
+  sql:
+    init:
+      mode: always
+logging:
+  level:
+    org:
+      hibernate:
+        stat: debug
+        # type: trace
+    com:
+      zaxxer:
+        hikari:
+          HikariConfig: debug
+          nodeValue: trace
+JWT_SECRET_KEY: "357638792F423F4428472B4B6250655368566D597133743677397A2443264629"
+
+
