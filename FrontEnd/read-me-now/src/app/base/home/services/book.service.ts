@@ -13,7 +13,7 @@ export class BookService {
   private httpClient: HttpClient = inject(HttpClient);
 
   public getBookList(pageNumber: number = 0, pageSize: number = 25, active: boolean = true): Observable<DataList<Book>>{
-    const url = `${environment.apiUrl}books`;
+    const url = `${environment.apiUrl}${environment.baseReadMeNow}books`;
     const params = new HttpParams().set('pageNumber', `${pageNumber}`).set('pageSize', `${pageSize}`).set('active', active);
 		return this.httpClient.get<DataList<Book>>(url, {params});
   }

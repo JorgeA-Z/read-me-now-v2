@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BookShelfPageComponent } from "../../components/book-shelf-page/book-shelf-page.component";
+import { BookShelfPageComponent } from "../../components/book-shelf/book-shelf.component";
 
 @Component({
   selector: 'app-home-page',

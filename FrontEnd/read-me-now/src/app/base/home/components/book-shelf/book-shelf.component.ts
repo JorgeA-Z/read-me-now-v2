@@ -2,13 +2,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { Book } from '../../interfaces/book';
 import { BookService } from '../../services/book.service';
 import { BookComponent } from '../book/book.component';
-
 @Component({
   selector: 'app-book-shelf-page',
   standalone: true,
   imports: [BookComponent],
-  templateUrl: './book-shelf-page.component.html',
-  styleUrl: './book-shelf-page.component.css'
+  templateUrl: './book-shelf.component.html',
+  styleUrl: './book-shelf.component.css'
 })
 export class BookShelfPageComponent implements OnInit{
 

@@ -1,6 +1,7 @@
 export const environment = {
     production: false,
-    apiUrl: 'http://localhost:8083/api/v2/readmenow/',
+    apiUrl: 'http://localhost:8083',
+    baseReadMeNow: '/api/v2/readmenow/',
     enableDebugTools: true
   };
   
