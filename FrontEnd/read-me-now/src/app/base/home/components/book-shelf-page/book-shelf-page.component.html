@@ -1,0 +1,5 @@
+<section class="w-full grid grid-cols-3 gap-2">
+    @for(book of bookList; track book.bookId){
+        <app-book [name]="book.name" [cover]="book.cover" [authorName]="book.author.name" [authorLastName]="book.author.lastname"></app-book>        
+    }
+</section>

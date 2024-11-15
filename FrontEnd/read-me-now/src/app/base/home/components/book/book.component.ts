@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-book',
@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './book.component.css'
 })
 export class BookComponent {
+
+  @Input() public name: string = ''
+  @Input() public cover: string = ''
+  @Input() public authorName: string = ''
+  @Input() public authorLastName: string = ''
+  
+
+  
 
 }

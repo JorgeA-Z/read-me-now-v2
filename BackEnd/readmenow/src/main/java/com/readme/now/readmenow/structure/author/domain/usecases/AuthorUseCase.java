@@ -1,12 +1,12 @@
 package com.readme.now.readmenow.structure.author.domain.usecases;
 
-import com.readme.now.readmenow.structure.author.application.in.ManagingAuthors;
-import com.readme.now.readmenow.structure.author.application.out.Authors;
-import com.readme.now.readmenow.structure.author.infrastructure.adapter.in.request.AuthorRequestCreate;
-import com.readme.now.readmenow.structure.author.infrastructure.adapter.in.request.AuthorRequestUpdate;
-import com.readme.now.readmenow.structure.author.infrastructure.adapter.in.response.AuthorResponse;
-import com.readme.now.readmenow.structure.author.infrastructure.adapter.out.entity.Author;
-import com.readme.now.readmenow.structure.author.infrastructure.adapter.out.mapper.AuthorMapper;
+import com.readme.now.readmenow.structure.author.application.input.ManagingAuthors;
+import com.readme.now.readmenow.structure.author.application.output.Authors;
+import com.readme.now.readmenow.structure.author.infrastructure.adapter.input.request.AuthorRequestCreate;
+import com.readme.now.readmenow.structure.author.infrastructure.adapter.input.request.AuthorRequestUpdate;
+import com.readme.now.readmenow.structure.author.infrastructure.adapter.input.response.AuthorResponse;
+import com.readme.now.readmenow.structure.author.infrastructure.adapter.output.entity.Author;
+import com.readme.now.readmenow.structure.author.infrastructure.adapter.output.mapper.AuthorMapper;
 import com.readme.now.readmenow.util.DataPageResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;

@@ -1,14 +1,14 @@
 package com.readme.now.readmenow.structure.book.domain.usecases;
 
-import com.readme.now.readmenow.structure.author.application.out.Authors;
-import com.readme.now.readmenow.structure.author.infrastructure.adapter.out.entity.Author;
+import com.readme.now.readmenow.structure.author.application.output.Authors;
+import com.readme.now.readmenow.structure.author.infrastructure.adapter.output.entity.Author;
 import com.readme.now.readmenow.structure.book.application.in.ManagingBooks;
 import com.readme.now.readmenow.structure.book.application.out.Books;
-import com.readme.now.readmenow.structure.book.infrastructure.adapter.in.request.BookRequestCreate;
-import com.readme.now.readmenow.structure.book.infrastructure.adapter.in.request.BookRequestUpdate;
-import com.readme.now.readmenow.structure.book.infrastructure.adapter.in.response.BookResponse;
-import com.readme.now.readmenow.structure.book.infrastructure.adapter.out.entity.Book;
-import com.readme.now.readmenow.structure.book.infrastructure.adapter.out.mapper.BookMapper;
+import com.readme.now.readmenow.structure.book.infrastructure.adapter.input.request.BookRequestCreate;
+import com.readme.now.readmenow.structure.book.infrastructure.adapter.input.request.BookRequestUpdate;
+import com.readme.now.readmenow.structure.book.infrastructure.adapter.input.response.BookResponse;
+import com.readme.now.readmenow.structure.book.infrastructure.adapter.output.entity.Book;
+import com.readme.now.readmenow.structure.book.infrastructure.adapter.output.mapper.BookMapper;
 import com.readme.now.readmenow.util.DataPageResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;

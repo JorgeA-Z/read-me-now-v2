@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { BookComponent } from '../../components/book/book.component';
+import { BookShelfPageComponent } from "../../components/book-shelf-page/book-shelf-page.component";
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [BookComponent],
+  imports: [BookShelfPageComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
